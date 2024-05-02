@@ -1,4 +1,5 @@
 CREATE DATABASE pers_info;
+USE pers_info;
 
 CREATE TABLE IF NOT EXISTS persone (
     id INT(11) AUTO_INCREMENT PRIMARY KEY,
