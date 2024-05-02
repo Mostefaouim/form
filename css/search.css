@@ -1,0 +1,24 @@
+body {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+}
+form {
+  width: 80%;
+}
+nav {
+  display: flex;
+  height: 30px;
+  width: 100%;
+  padding: 10px 5px;
+}
+h4 {
+  margin: 6px 3px 0 0;
+}
+.search {
+  cursor: pointer;
+  border-radius: 12px;
+  margin-left: 20px;
+  height: 30px;
+}

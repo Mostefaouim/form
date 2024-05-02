@@ -1,0 +1,33 @@
+body {
+  margin: 0;
+}
+.numero {
+  border: 2px solid black;
+  padding: 2px 9px;
+}
+nav {
+  display: flex;
+  height: 30px;
+  width: 100%;
+  padding: 10px 5px;
+}
+h4 {
+  margin: 6px 3px 0 0;
+}
+.search {
+  cursor: pointer;
+  border-radius: 12px;
+  margin-left: 20px;
+}
+form {
+  padding: 0 20px;
+}
+form input {
+  height: 18px;
+}
+#applications {
+  margin-left: 100px;
+}
+form label {
+  width: 180px;
+}
