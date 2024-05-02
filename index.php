@@ -88,7 +88,7 @@
         <button type="submit" name="submit">Display PHP</button>
         <button type="button" onclick="afficherJavaScript()">Display JavaScript</button>
         <button type="submit" name="enregistrer">Save</button>
-        <button type="submit" name="affichage_liste">Display Data</button>
+        <button type="submit" name="affichage_liste">Display DB</button>
         <button type="submit" formaction="supprimer.html">Delete</button>
         <button type="submit" formaction="modifier.html">Modify</button>
     </form>
