@@ -1,33 +1,86 @@
 body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
   margin: 0;
+  padding: 0;
 }
-.numero {
-  border: 2px solid black;
-  padding: 2px 9px;
-}
+
 nav {
-  display: flex;
-  height: 30px;
-  width: 100%;
-  padding: 10px 5px;
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
 }
-h4 {
-  margin: 6px 3px 0 0;
+
+nav h4 {
+  margin: 0;
+  font-size: 18px;
 }
+
+.numero {
+  font-weight: bold;
+  font-size: 20px;
+}
+
 .search {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
   cursor: pointer;
-  border-radius: 12px;
-  margin-left: 20px;
+  font-size: 16px;
+  margin-top: 10px;
 }
+
+.search:hover {
+  background-color: #45a049;
+}
+
 form {
-  padding: 0 20px;
+  padding: 20px;
+  background-color: #fff;
+  margin: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-form input {
-  height: 18px;
+
+label {
+  font-weight: bold;
 }
-#applications {
-  margin-left: 100px;
+
+input[type="text"],
+input[type="date"],
+textarea,
+select {
+  width: calc(100% - 10px);
+  padding: 8px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
 }
-form label {
-  width: 180px;
+
+input[type="file"] {
+  margin-top: 10px;
+}
+
+button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+#previewImage,
+#previewImage2 {
+  margin-top: 10px;
 }
