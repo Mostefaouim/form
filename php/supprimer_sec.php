@@ -5,7 +5,7 @@ if (!file_exists($uploadDir)) {
     mkdir($uploadDir, 0777, true);
 }
 $id = $_POST['id'];
-$sql = "SELECT * FROM form WHERE id = $id";
+$sql = "SELECT * FROM persone WHERE id = $id";
 $result = $conn->query($sql);
 if ($result->num_rows > 0) {
     // Affiche les données trouvées

@@ -29,7 +29,7 @@ if ($_FILES['imageInput']['error'] === UPLOAD_ERR_OK) {
         $dest_path = $uploadDir . $fileName;
 
         if (move_uploaded_file($fileTmpPath, $dest_path)) {
-            $sql = "INSERT INTO form (civilite, nom, adresse, code_postal, localite, pays, plateformes, applications,D_N, D_R, image,image2) 
+            $sql = "INSERT INTO persone (civilite, nom, adresse, code_postal, localite, pays, plateformes, applications,D_N, D_R, image,image2) 
             VALUES ('$civilite', '$nom', '$adresse', '$codePostal', '$localite', '$pays', '$plateformes', '$applications','$D_N','$D_R' ,'$fileName','$fileName2')";
             if ($conn->query($sql) === TRUE) {
                 echo "Record register successfully <br /><center>

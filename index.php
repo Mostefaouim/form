@@ -2,13 +2,13 @@
   $servername = "localhost";
   $username = "root";
   $password = "";
-  $dbname = "";
+  $dbname = "pers_info";
   
   $conn = new mysqli($servername, $username, $password, $dbname);
   if ($conn->connect_error) {
       die("La connexion a échoué : " . $conn->connect_error);
   }
-  $sql = ("SELECT count(*) as total from form;");
+  $sql = ("SELECT count(*) as total from persone;");
   $res = $conn->query($sql);
   $data=mysqli_fetch_assoc($res);
   $numero = $data['total'] + 1;
@@ -29,7 +29,7 @@
         <button class="search" type="submit"  name="RechercherID" onclick="redirectToAnotherPage('research')">Rechercher 🔎</button>
     </nav>
     <br />
-    <form method="post" action="php/tp7.php" enctype="multipart/form-data">
+    <form method="post" action="php/form.php" enctype="multipart/form-data">
         <label for="civilite">Civilité:</label><br />
         <input type="radio" id="monsieur" name="civilite" value="Monsieur" checked />
         <b>Monsieur</b>

@@ -1,5 +1,5 @@
 <?php
-$sql_select = "SELECT * FROM form";
+$sql_select = "SELECT * FROM persone";
 $result = $conn->query($sql_select);
 if ($result->num_rows > 0) {
         echo "<h2>Liste des enregistrements :</h2>";

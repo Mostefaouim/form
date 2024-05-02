@@ -41,7 +41,10 @@ form {
   padding: 20px;
   background-color: #fff;
   margin: 20px;
+  margin-left: 25%;
+  margin-right: 25%;
   border-radius: 5px;
+  width: 50%;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 

@@ -31,7 +31,7 @@ if ($_FILES['imageInput']['error'] === UPLOAD_ERR_OK) {
         $dest_path = 'uploads/' . $fileName;
 
         if (move_uploaded_file($fileTmpPath, $dest_path)) {
-            $sql = "UPDATE form SET civilite='$civilite', nom='$nom', adresse='$adresse', code_postal='$codePostal', localite='$localite', pays='$pays', plateformes='$plateformes', applications='$applications',D_N='$D_N', D_R='$D_R', image='$fileName',image2 ='$fileName2' WHERE id=$id";
+            $sql = "UPDATE persone SET civilite='$civilite', nom='$nom', adresse='$adresse', code_postal='$codePostal', localite='$localite', pays='$pays', plateformes='$plateformes', applications='$applications',D_N='$D_N', D_R='$D_R', image='$fileName',image2 ='$fileName2' WHERE id=$id";
             if ($conn->query($sql) === TRUE) {
                 echo "Record updated successfully <br /><center>
                 <a href='/tp77'><input type='button' value='home'></a>
