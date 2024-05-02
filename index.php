@@ -77,20 +77,20 @@
         <input type="date" name="D_N" id="D_N" /> <br /><br />
         <label for="D_R">Date de rendez-vous :</label>
         <input type="date" name="D_R" id="D_R" /> <br /><br />
-        <label for="imageInput">Insérer la premiere Image :</label>
+        <label for="imageInput">Insert first Image :</label>
         <input type="file" id="imageInput" name="imageInput" /><br /><br />
         <img id="previewImage" alt="Image preview" style="display: none; max-width: 150px" /><br /><br />
 
-        <label for="imageInput2">Insérer la deuxième Image :</label>
+        <label for="imageInput2">Insert secend Image :</label>
         <input type="file" id="imageInput2" name="imageInput2" /><br /><br />
         <img id="previewImage2" alt="Image preview" style="display: none; max-width: 150px" /><br /><br />
 
-        <button type="submit" name="submit">Afficher PHP</button>
-        <button type="button" onclick="afficherJavaScript()">Afficher JavaScript</button>
-        <button type="submit" name="enregistrer">Enregistrer</button>
-        <button type="submit" name="affichage_liste">Affichage Liste</button>
-        <button type="submit" formaction="supprimer.html">Supprimer</button>
-        <button type="submit" formaction="modifier.html">Modifier</button>
+        <button type="submit" name="submit">Display PHP</button>
+        <button type="button" onclick="afficherJavaScript()">Display JavaScript</button>
+        <button type="submit" name="enregistrer">Save</button>
+        <button type="submit" name="affichage_liste">Display Data</button>
+        <button type="submit" formaction="supprimer.html">Delete</button>
+        <button type="submit" formaction="modifier.html">Modify</button>
     </form>
     <script>
     var imageSrc = "";
